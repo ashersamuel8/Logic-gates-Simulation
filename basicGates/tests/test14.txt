@@ -1,0 +1,26 @@
+INPUTVAR 8 input0 input1 input2 input3 input4 input5 input6 input7
+OUTPUTVAR 8 output0 output1 output2 output3 output4 output5 output6 output7
+AND input4 input0 temp0
+NOT input1 temp1
+XOR input7 input2 temp2
+NOR input5 temp1 temp3
+NOR input0 temp3 temp4
+NOR temp1 input4 temp5
+NOT input7 temp6
+NOR temp6 input1 temp7
+XOR temp5 temp2 temp8
+XNOR temp2 temp3 temp9
+AND input7 temp7 temp10
+XOR input1 input6 temp11
+NOT temp2 temp12
+OR temp6 input3 temp13
+NOT temp7 temp14
+XNOR input2 temp8 temp15
+AND temp2 temp9 output0
+NOT input1 output1
+NAND input4 temp8 output2
+NAND input2 input3 output3
+XOR input5 input7 output4
+NAND temp4 input5 output5
+NAND temp9 input5 output6
+XNOR temp13 temp6 output7
